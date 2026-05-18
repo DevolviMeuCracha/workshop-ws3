@@ -36,7 +36,7 @@
       window.addEventListener(e, triggerLoad, { passive: true, once: true });
     });
 
-    setTimeout(loadMetaPixel, 3000);
+    setTimeout(loadMetaPixel, 8000);
   })();
   </script>
   <noscript>
@@ -45,18 +45,17 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- TODO: atualizar canonical e og:url para o domínio do Caminho 3 -->
   <title>Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro.</title>
   <meta name="description" content="Sua consultoria fatura mas sem previsibilidade, virou PJtinha de cliente pequeno e depende de indicação. Em uma manhã de sábado, com método executivo, você sai com a estratégia comercial para atrair clientes do tamanho da sua bagagem." />
-  <link rel="canonical" href="https://workshop2.devolvimeucracha.com.br/" /><!-- TODO: atualizar URL canonical para o Caminho 3 -->
+  <link rel="canonical" href="https://workshop3.devolvimeucracha.com.br/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro." />
   <meta property="og:description" content="Sua consultoria fatura sem previsibilidade, virou PJtinha de cliente pequeno, depende de indicação. Sábado, 06 de junho, 8:30 às 12:30." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:url" content="https://workshop2.devolvimeucracha.com.br/" /><!-- TODO: atualizar og:url -->
-  <meta property="og:image" content="https://workshop2.devolvimeucracha.com.br/assets/og-image.png" /><!-- TODO: atualizar og:image -->
+  <meta property="og:url" content="https://workshop3.devolvimeucracha.com.br/" />
+  <meta property="og:image" content="https://workshop3.devolvimeucracha.com.br/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -64,7 +63,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro." />
   <meta name="twitter:description" content="Sua consultoria fatura sem previsibilidade, virou PJtinha de cliente pequeno, depende de indicação. Sábado, 06 de junho, 8:30 às 12:30." />
-  <meta name="twitter:image" content="https://workshop2.devolvimeucracha.com.br/assets/og-image.png" /><!-- TODO: atualizar twitter:image -->
+  <meta name="twitter:image" content="https://workshop3.devolvimeucracha.com.br/assets/og-image.png" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -90,9 +89,9 @@
 
   <!-- Critical CSS: font-face + above-fold layout to prevent FOUC on async CSS load -->
   <style>
-    @font-face{font-family:'Merriweather';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/merriweather-700.woff2') format('woff2')}
-    @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/inter-400.woff2') format('woff2')}
-    @font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/montserrat-600.woff2') format('woff2')}
+    @font-face{font-family:'Merriweather';font-style:normal;font-weight:700;font-display:optional;src:url('/assets/fonts/merriweather-700.woff2') format('woff2')}
+    @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:optional;src:url('/assets/fonts/inter-400.woff2') format('woff2')}
+    @font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:optional;src:url('/assets/fonts/montserrat-600.woff2') format('woff2')}
     :root{--color-bg-base:#FDF8F2;--color-primary:#102A2C;--color-accent:#FFAD4E;--color-text-primary:#102A2C;--color-text-on-dark:#FDF8F2;--font-heading:'Merriweather',Georgia,serif;--font-subheading:'Montserrat',system-ui,sans-serif;--font-body:'Inter',system-ui,sans-serif;--container-max:1200px;--padding-x-mobile:24px;--padding-x-tablet:48px;--padding-x-desktop:80px;--section-py-mobile:64px;--section-py-desktop:96px;--section-py-hero:120px;--radius-card:12px;--shadow-lg:0 12px 32px rgba(16,42,44,.08)}
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
