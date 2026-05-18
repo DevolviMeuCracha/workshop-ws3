@@ -1,0 +1,41 @@
+# =========================================================
+# CLOUDFLARE PAGES — HTTP HEADERS
+# =========================================================
+
+# --- HTML: cache curto, sempre revalida ---
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# --- index (raiz) ---
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# --- CSS: cache 1 ano (versionar via querystring se editar) ---
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# --- JS: cache 1 ano ---
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# --- Assets (imagens, fontes, etc.): cache 1 ano ---
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# --- Ícones / favicon ---
+/favicon.ico
+  Cache-Control: public, max-age=86400
+  X-Content-Type-Options: nosniff

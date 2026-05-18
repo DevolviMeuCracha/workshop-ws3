@@ -1,0 +1,17 @@
+# =========================================================
+# CLOUDFLARE PAGES — REDIRECTS
+# =========================================================
+# Sintaxe: [origem] [destino] [código]
+#
+# Exemplos práticos (descomente quando precisar):
+#
+# Redirect "vanity URL" do checkout para o link real:
+# /checkout https://pay.hotmart.com/SEU-LINK-AQUI 302
+#
+# Redirect para WhatsApp:
+# /whatsapp https://wa.me/55XXXXXXXXXXX 302
+#
+# Redirect 301 (SEO) caso troque o slug:
+# /antigo /novo 301
+#
+# Por enquanto: nada redireciona — página é única.
