@@ -45,13 +45,13 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
-  <title>Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro.</title>
-  <meta name="description" content="Sua consultoria fatura mas sem previsibilidade, virou PJtinha de cliente pequeno e depende de indicação. Em uma manhã de sábado, com método executivo, você sai com a estratégia comercial para atrair clientes do tamanho da sua bagagem." />
+  <title>Workshop Devolvi Meu Crachá — Saia do hobby caro e estruture seu negócio de consultoria</title>
+  <meta name="description" content="Em uma manhã de sábado, com método executivo, você sai da consultoria-hobby (sem previsibilidade, ticket baixo, virou PJtinha) e estrutura o negócio que sua bagagem merece." />
   <link rel="canonical" href="https://workshop3.devolvimeucracha.com.br/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro." />
-  <meta property="og:description" content="Sua consultoria fatura sem previsibilidade, virou PJtinha de cliente pequeno, depende de indicação. Sábado, 06 de junho, 8:30 às 12:30." />
+  <meta property="og:title" content="Workshop Devolvi Meu Crachá — Saia do hobby caro e estruture seu negócio de consultoria" />
+  <meta property="og:description" content="Em uma manhã de sábado, com método executivo, você sai da consultoria-hobby (sem previsibilidade, ticket baixo, virou PJtinha) e estrutura o negócio que sua bagagem merece." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:url" content="https://workshop3.devolvimeucracha.com.br/" />
@@ -61,8 +61,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Workshop Devolvi Meu Crachá — Você não tem um negócio. Tem um hobby caro." />
-  <meta name="twitter:description" content="Sua consultoria fatura sem previsibilidade, virou PJtinha de cliente pequeno, depende de indicação. Sábado, 06 de junho, 8:30 às 12:30." />
+  <meta name="twitter:title" content="Workshop Devolvi Meu Crachá — Saia do hobby caro e estruture seu negócio de consultoria" />
+  <meta name="twitter:description" content="Em uma manhã de sábado, com método executivo, você sai da consultoria-hobby (sem previsibilidade, ticket baixo, virou PJtinha) e estrutura o negócio que sua bagagem merece." />
   <meta name="twitter:image" content="https://workshop3.devolvimeucracha.com.br/assets/og-image.png" />
 
   <!-- Favicon -->
@@ -126,6 +126,23 @@
   <!-- Styles: async load eliminates render-blocking (saves ~2,900 ms on mobile) -->
   <link rel="preload" href="css/styles.min.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/styles.min.css?v=1"></noscript>
+
+  <style>
+    /* --- Solution cards glassmorphism --- */
+    .solution-cards{display:grid;grid-template-columns:1fr;gap:16px;text-align:left;margin-top:40px}
+    @media(min-width:768px){.solution-cards{grid-template-columns:repeat(3,1fr);gap:24px}}
+    .solution-card{background:rgba(255,255,255,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.6);border-radius:18px;box-shadow:0 2px 8px rgba(0,0,0,.04),0 16px 40px rgba(0,0,0,.08);padding:32px 32px 36px;transition:transform 280ms ease-out,box-shadow 280ms ease-out}
+    @media(hover:hover){.solution-card:hover{transform:translateY(-4px);box-shadow:0 4px 16px rgba(0,0,0,.08),0 24px 56px rgba(0,0,0,.12)}}
+    .solution-card__number{display:block;font-family:var(--font-heading);font-size:clamp(48px,6vw,64px);font-weight:700;color:var(--color-accent);line-height:1;margin-bottom:16px}
+    .solution-card p{font-size:16px;line-height:1.6;color:var(--color-text-primary);margin:0}
+    /* --- Step card subtitle --- */
+    .step-card__subtitle{display:block;font-family:var(--font-heading);font-style:italic;font-weight:300;font-size:14px;color:rgba(16,42,44,.6);margin-top:4px;margin-bottom:12px;line-height:1.4}
+    /* --- Offer card deliverables list --- */
+    .offer-card__deliverables{list-style:none;padding:0;margin:24px 0;text-align:left}
+    .offer-card__deliverables li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:14px;line-height:1.5;color:rgba(253,248,242,.88);padding-left:20px;position:relative}
+    .offer-card__deliverables li::before{content:'✓';position:absolute;left:0;color:var(--color-accent);font-weight:700}
+    .offer-card__deliverables li:last-child{border-bottom:none}
+  </style>
 </head>
 <body>
 
@@ -289,7 +306,7 @@
 
         <div class="opportunity-block fade-in">
           <p class="section-body">
-            O mercado brasileiro de consultoria boutique para PMEs cresce em dois dígitos ao ano — e <strong>a parte que mais cresce é a de PMEs de médio porte (R$ 50M-R$ 500M)</strong>, que pagam R$ 15k a R$ 30k/mês por consultoria estratégica de alta senioridade.
+            O mercado brasileiro de consultoria boutique cresce em dois dígitos ao ano — e <strong>a parte que mais cresce é a de PMEs de médio porte (R$ 50M-R$ 500M)</strong> que contratam consultoria estratégica a partir de R$ 10k/mês por cliente, com contrato anual. 3 clientes desses = R$ 30k/mês previsíveis — não montanha-russa de indicação.
           </p>
           <p class="section-body">
             Esses clientes existem. Eles pagam. E <strong>eles não te encontram</strong> porque você não tem método de atração — está esperando indicação da PME-pequena-que-paga-pouco te recomendar para uma PME-média-que-pagaria-bem. Não funciona assim.
@@ -329,12 +346,22 @@
           <h2 class="section-title">A solução não é fazer <strong>mais</strong> — você já está fazendo demais por pouco. É construir <em>estratégia comercial</em> que atrai cliente do tamanho da sua bagagem, com previsibilidade.</h2>
         </header>
 
-        <p class="section-body fade-in">
-          Em 4 horas com Juliana Paes Garcia, você faz três coisas:
-          <strong>(1)</strong> diagnostica onde sua consultoria está vazando faturamento — modelo, distribuição, oferta ou posicionamento,
-          <strong>(2)</strong> reescreve o perfil do cliente que sua bagagem merece,
-          <strong>(3)</strong> sai com os 3 movimentos para atrair esse cliente nas próximas 12 semanas — sem virar guru, sem postar dancinha.
-        </p>
+        <p class="section-body fade-in">Em 4 horas com Juliana Paes Garcia, você faz três coisas:</p>
+
+        <div class="solution-cards stagger">
+          <div class="solution-card fade-in">
+            <span class="solution-card__number">01</span>
+            <p><strong>DIAGNOSTICA</strong> onde sua consultoria está vazando faturamento — modelo de cobrança, posicionamento, distribuição ou perfil de cliente. Você sai com o ranking do que corrigir primeiro e por quê.</p>
+          </div>
+          <div class="solution-card fade-in">
+            <span class="solution-card__number">02</span>
+            <p><strong>REESCREVE</strong> o perfil do cliente que sua bagagem merece — e a proposta de valor para ser ouvido por quem fecha contrato anual a R$ 10k+/mês. Sem PME-que-paga-pouco, sem PJtinha.</p>
+          </div>
+          <div class="solution-card fade-in">
+            <span class="solution-card__number">03</span>
+            <p><strong>SAI</strong> com o funil de captação própria marcado — primeira ação concreta desta semana. Sem virar guru do LinkedIn, sem postar dancinha. Distribuição executiva B2B sênior.</p>
+          </div>
+        </div>
 
         <p class="anchor-quote fade-in">
           É exatamente isso que o <span>Workshop Devolvi Meu Crachá entrega.</span>
@@ -408,28 +435,32 @@
             <span class="step-card__number">01</span>
             <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="m3.165 19.503l7.362-16.51c.59-1.324 2.355-1.324 2.946 0l7.362 16.51c.667 1.495-.814 3.047-2.202 2.306l-5.904-3.152c-.459-.245-1-.245-1.458 0l-5.904 3.152c-1.388.74-2.87-.81-2.202-2.306Z"/></svg>
             <h3 class="step-card__title">DIAGNÓSTICO DO HOBBY CARO</h3>
-            <p>Onde sua consultoria está vazando faturamento? Modelo de cobrança? Posicionamento? Distribuição? Perfil de cliente? Você sai com o ranking do que vazar primeiro.</p>
+            <em class="step-card__subtitle">(Diagnóstico ao vivo dos 4 erros da Síndrome do PJtinha)</em>
+            <p>Onde sua consultoria está vazando faturamento? Vender horas, posicionamento fraco, nicho errado, operar sem método? Você sai do sábado com o ranking do que vazar primeiro — e por quê.</p>
           </article>
 
           <article class="card step-card fade-in">
             <span class="step-card__number">02</span>
             <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10Z"/><path stroke-linecap="round" d="M2 12h3m14 0h3M12 22v-3m0-14V2"/><path stroke-linecap="round" stroke-linejoin="round" d="M10 12h4m-2 2v-4"/></g></svg>
             <h3 class="step-card__title">UPGRADE DE PERFIL DE CLIENTE</h3>
-            <p>O método para sair da PME-que-paga-pouco e mirar no porte de cliente compatível com sua bagagem. Como reescrever sua proposta de valor para ser ouvido por quem paga R$ 15k-30k/mês.</p>
+            <em class="step-card__subtitle">(Exercício de Reescolha de Nicho)</em>
+            <p>O método pra sair da PME-que-paga-pouco e mirar PME-média compatível com sua bagagem. Reescreve sua proposta pra ser ouvido por quem fecha contrato anual a R$ 10k+/mês.</p>
           </article>
 
           <article class="card step-card fade-in">
             <span class="step-card__number">03</span>
-            <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c0 3.771 0 7.657 1.318 8.828C5.636 22 7.758 22 12 22s6.364 0 7.682-1.172S21 15.771 21 12"/><path d="m14.66 14.202l6.008-1.802c.595-.179.893-.268 1.082-.482a1 1 0 0 0 .1-.134c.15-.243.15-.553.15-1.175c0-2.45 0-3.675-.673-4.502a3 3 0 0 0-.434-.434C20.066 5 18.841 5 16.391 5H7.61c-2.45 0-3.675 0-4.502.673q-.24.195-.434.434C2 6.934 2 8.159 2 10.609c0 .622 0 .932.15 1.175q.045.07.1.134c.19.214.487.303 1.082.482l6.008 1.802M6.5 5c.823-.02 1.66-.545 1.94-1.32l.035-.103L8.5 3.5c.042-.127.064-.19.086-.246a2 2 0 0 1 1.735-1.25C10.38 2 10.448 2 10.58 2h2.838c.133 0 .2 0 .26.004a2 2 0 0 1 1.735 1.25c.023.056.044.12.086.246l.026.077c.018.053.026.08.035.103c.28.775 1.116 1.3 1.939 1.32"/><path stroke-linecap="round" d="M14 12.5h-4a.5.5 0 0 0-.5.5v2.162a.5.5 0 0 0 .314.464l.7.28a4 4 0 0 0 2.972 0l.7-.28a.5.5 0 0 0 .314-.464V13a.5.5 0 0 0-.5-.5Z"/></g></svg>
-            <h3 class="step-card__title">ESTRATÉGIA COMERCIAL ESTRUTURADA</h3>
-            <p>Os 3 movimentos para construir um funil de aquisição próprio — sem depender de indicação, sem virar guru, sem postar dancinha. Estratégia executiva de B2B sênior.</p>
+            <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="M2 5.5L3.214 7L7.5 3M2 12.5L3.214 14L7.5 10M2 19.5L3.214 21L7.5 17"/><path d="M22 19H12m10-7H12m10-7H12"/></g></svg>
+            <h3 class="step-card__title">PRECIFICAÇÃO POR VALOR ENTREGUE</h3>
+            <em class="step-card__subtitle">(Exercício de Precificação por Valor)</em>
+            <p>Como sair de "cobrar o que dá pra arrancar" e cobrar R$ 60k+ por projeto ou R$ 10k/mês com contrato anual. O cliente paga pelo problema que você resolve, não pela hora que você ficou na sala.</p>
           </article>
 
           <article class="card step-card fade-in">
             <span class="step-card__number">04</span>
-            <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="M2 5.5L3.214 7L7.5 3M2 12.5L3.214 14L7.5 10M2 19.5L3.214 21L7.5 17"/><path d="M22 19H12m10-7H12m10-7H12"/></g></svg>
-            <h3 class="step-card__title">PRECIFICAÇÃO POR VALOR ENTREGUE</h3>
-            <p>Como sair de "cobrar o que dá pra arrancar" e passar a precificar pelo resultado entregue. O método para parar de ser PJtinha e virar <strong>conselheiro estratégico que o cliente paga sem negociar.</strong></p>
+            <svg class="step-card__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c0 3.771 0 7.657 1.318 8.828C5.636 22 7.758 22 12 22s6.364 0 7.682-1.172S21 15.771 21 12"/><path d="m14.66 14.202l6.008-1.802c.595-.179.893-.268 1.082-.482a1 1 0 0 0 .1-.134c.15-.243.15-.553.15-1.175c0-2.45 0-3.675-.673-4.502a3 3 0 0 0-.434-.434C20.066 5 18.841 5 16.391 5H7.61c-2.45 0-3.675 0-4.502.673q-.24.195-.434.434C2 6.934 2 8.159 2 10.609c0 .622 0 .932.15 1.175q.045.07.1.134c.19.214.487.303 1.082.482l6.008 1.802M6.5 5c.823-.02 1.66-.545 1.94-1.32l.035-.103L8.5 3.5c.042-.127.064-.19.086-.246a2 2 0 0 1 1.735-1.25C10.38 2 10.448 2 10.58 2h2.838c.133 0 .2 0 .26.004a2 2 0 0 1 1.735 1.25c.023.056.044.12.086.246l.026.077c.018.053.026.08.035.103c.28.775 1.116 1.3 1.939 1.32"/><path stroke-linecap="round" d="M14 12.5h-4a.5.5 0 0 0-.5.5v2.162a.5.5 0 0 0 .314.464l.7.28a4 4 0 0 0 2.972 0l.7-.28a.5.5 0 0 0 .314-.464V13a.5.5 0 0 0-.5-.5Z"/></g></svg>
+            <h3 class="step-card__title">FUNIL DE MAÇÃS BAIXAS</h3>
+            <em class="step-card__subtitle">(Exercício da Primeira Maçã)</em>
+            <p>O método de captação própria que substitui indicação — sem virar guru do LinkedIn, sem postar dancinha. Distribuição executiva B2B sênior. Primeira ação concreta marcada pra esta semana.</p>
           </article>
         </div>
 
@@ -446,14 +477,14 @@
     </section>
 
     <!-- =========================================================== -->
-    <!-- DOBRA 8 — ENTREGÁVEIS                                        -->
+    <!-- DOBRA 8 — ENTREGÁVEIS (fusão com bônus)                      -->
     <!-- =========================================================== -->
     <section class="section section--warm" id="entregaveis">
       <div class="container">
         <div class="deliverables__grid">
           <div class="deliverables__copy fade-in">
-            <span class="eyebrow">O QUE VOCÊ VAI RECEBER</span>
-            <h2 class="section-title">TUDO QUE VOCÊ VAI RECEBER</h2>
+            <span class="eyebrow">O QUE VOCÊ RECEBE</span>
+            <h2 class="section-title">TUDO QUE VOCÊ RECEBE</h2>
             <p class="section-lede">Para você sair do dia 06 de junho com sua consultoria virando negócio de verdade:</p>
 
             <ul class="deliverables__list">
@@ -462,26 +493,8 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="m17 9.5l.658-.329c1.946-.973 2.92-1.46 3.63-1.02c.712.44.712 1.528.712 3.703v.292c0 2.176 0 3.263-.711 3.703c-.712.44-1.685-.047-3.63-1.02L17 14.5zm-3.44-2.06a1.5 1.5 0 1 1-2.121 2.12a1.5 1.5 0 0 1 2.122-2.12Z"/><path d="M2 11.5c0-3.287 0-4.931.908-6.038a4 4 0 0 1 .554-.554C4.57 4 6.212 4 9.5 4c3.287 0 4.931 0 6.038.908a4 4 0 0 1 .554.554C17 6.57 17 8.212 17 11.5v1c0 3.287 0 4.931-.908 6.038a4 4 0 0 1-.554.554C14.43 20 12.788 20 9.5 20c-3.287 0-4.931 0-6.038-.908a4 4 0 0 1-.554-.554C2 17.43 2 15.788 2 12.5z"/></g></svg>
                 </span>
                 <div>
-                  <strong>Acesso ao Workshop ao vivo</strong>
-                  <p>4 horas com Juliana Paes Garcia, sábado de manhã, com a estratégia comercial dos próximos 90 dias no papel ao final.</p>
-                </div>
-              </li>
-              <li>
-                <span class="icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="m3.165 19.503l7.362-16.51c.59-1.324 2.355-1.324 2.946 0l7.362 16.51c.667 1.495-.814 3.047-2.202 2.306l-5.904-3.152c-.459-.245-1-.245-1.458 0l-5.904 3.152c-1.388.74-2.87-.81-2.202-2.306Z"/></svg>
-                </span>
-                <div>
-                  <strong>Diagnóstico do Hobby Caro</strong>
-                  <p>O exercício prático que aponta exatamente onde seu negócio está vazando faturamento e previsibilidade.</p>
-                </div>
-              </li>
-              <li>
-                <span class="icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h2c3.771 0 5.657 0 6.828 1.172S21 6.229 21 10v4c0 3.771 0 5.657-1.172 6.828S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.172S3 17.771 3 14z"/><path stroke-linecap="round" d="M8 12h8M8 8h8m-8 8h5"/></g></svg>
-                </span>
-                <div>
-                  <strong>Mapa de Upgrade de Cliente</strong>
-                  <p>O método para mirar no porte de cliente que sua bagagem merece, sem virar refém da PME pequena.</p>
+                  <strong>Manhã de imersão em reestruturação de negócio de consultoria com Juliana Paes Garcia</strong>
+                  <p>4 horas ao vivo, sábado 06/jun, com a virada do hobby caro pro negócio estruturado no papel.</p>
                 </div>
               </li>
               <li>
@@ -489,8 +502,43 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="M2 5.5L3.214 7L7.5 3M2 12.5L3.214 14L7.5 10M2 19.5L3.214 21L7.5 17"/><path d="M22 19H12m10-7H12m10-7H12"/></g></svg>
                 </span>
                 <div>
-                  <strong>Estratégia Comercial Estruturada</strong>
-                  <p>Os 3 movimentos para construir aquisição própria, sem indicação.</p>
+                  <strong>Passo a passo prático</strong>
+                  <p>Para diagnosticar onde sua consultoria vaza, fazer upgrade de cliente, precificar por valor e captar sem indicação.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2S5.636 2 4.318 3.332S3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></svg>
+                </span>
+                <div>
+                  <strong>Material de apoio — Planner Estratégico DMC</strong>
+                  <p>Preenchido durante o workshop para reestruturar sua consultoria.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h2c3.771 0 5.657 0 6.828 1.172S21 6.229 21 10v4c0 3.771 0 5.657-1.172 6.828S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.172S3 17.771 3 14z"/><path stroke-linecap="round" d="M8 12h8M8 8h8m-8 8h5"/></g></svg>
+                </span>
+                <div>
+                  <strong>Ferramenta exclusiva — IA de Diagnóstico de Nicho</strong>
+                  <p>Com o Mapa de Upgrade do seu Cliente e o Inventário das suas Habilidades Transferíveis.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="m8.5 12.5l2 2l5-5"/></g></svg>
+                </span>
+                <div>
+                  <strong>Acesso ao método</strong>
+                  <p>Que já ajudou centenas de profissionais a transformar bagagem corporativa em negócio de alto ticket.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6M7 4h10a2 2 0 0 1 2 2v14l-3-2l-2 2l-2-2l-2 2l-2-2l-3 2V6a2 2 0 0 1 2-2z"/></g></svg>
+                </span>
+                <div>
+                  <strong>Bônus: Guia com os 15 Nichos mais lucrativos em 2026</strong>
                 </div>
               </li>
               <li>
@@ -498,8 +546,8 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.009m3.982 0H12m3.991 0H16"/><path stroke-width="1.5" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22Z"/></g></svg>
                 </span>
                 <div>
-                  <strong>Acesso à comunidade no WhatsApp</strong>
-                  <p>Durante o Workshop e nas semanas seguintes, com outros consultores no mesmo movimento de upgrade.</p>
+                  <strong>Grupo de WhatsApp Pré-Evento</strong>
+                  <p>Conteúdo diário entre a sua compra e o dia 06/jun, pra você chegar com o diagnóstico do seu negócio amadurecendo.</p>
                 </div>
               </li>
             </ul>
@@ -515,36 +563,6 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================== -->
-    <!-- DOBRA 9 — BÔNUS                                              -->
-    <!-- =========================================================== -->
-    <section class="section" id="bonus">
-      <div class="container">
-        <header class="section-header text-center fade-in">
-          <span class="eyebrow">BÔNUS DO WORKSHOP</span>
-          <h2 class="section-title">E você ainda recebe:</h2>
-        </header>
-
-        <div class="bonus-grid stagger">
-          <article class="card bonus-card fade-in">
-            <svg class="bonus-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16.09v-4.992c0-4.29 0-6.433-1.318-7.766C18.364 2 16.242 2 12 2S5.636 2 4.318 3.332S3 6.81 3 11.098v4.993c0 3.096 0 4.645.734 5.321c.35.323.792.526 1.263.58c.987.113 2.14-.907 4.445-2.946c1.02-.901 1.529-1.352 2.118-1.47c.29-.06.59-.06.88 0c.59.118 1.099.569 2.118 1.47c2.305 2.039 3.458 3.059 4.445 2.945c.47-.053.913-.256 1.263-.579c.734-.676.734-2.224.734-5.321Z"/><path stroke-linecap="round" d="M15 6H9"/></g></svg>
-            <h3 class="bonus-card__title">Planner Estratégico Devolvi Meu Crachá</h3>
-            <p>O material executivo para destravar as próximas 12 semanas com foco em previsibilidade de receita.</p>
-          </article>
-          <article class="card bonus-card fade-in">
-            <svg class="bonus-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.009m3.982 0H12m3.991 0H16"/><path stroke-width="1.5" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22Z"/></g></svg>
-            <h3 class="bonus-card__title">Grupo de WhatsApp Exclusivo</h3>
-            <p>Onde você se conecta com outros consultores fora do CLT, no mesmo desafio de escalar com método.</p>
-          </article>
-          <article class="card bonus-card fade-in">
-            <svg class="bonus-card__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M2 11.5c0-3.287 0-4.931.908-6.038a4 4 0 0 1 .554-.554C4.57 4 6.212 4 9.5 4c3.287 0 4.931 0 6.038.908a4 4 0 0 1 .554.554C17 6.57 17 8.212 17 11.5v1c0 3.287 0 4.931-.908 6.038a4 4 0 0 1-.554.554C14.43 20 12.788 20 9.5 20c-3.287 0-4.931 0-6.038-.908a4 4 0 0 1-.554-.554C2 17.43 2 15.788 2 12.5zm15-2l.658-.329c1.946-.973 2.92-1.46 3.63-1.02c.712.44.712 1.528.712 3.703v.292c0 2.176 0 3.263-.711 3.703c-.712.44-1.685-.047-3.63-1.02L17 14.5z"/></svg>
-            <h3 class="bonus-card__title">Acesso à Gravação por 7 Dias</h3>
-            <p>Para rever o diagnóstico com calma e aplicar no seu próprio negócio.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -619,21 +637,21 @@
         </header>
 
         <ul class="value-stack stagger">
-          <li class="fade-in"><span>Workshop ao vivo com Juliana Paes Garcia</span><strong>R$ 497</strong></li>
-          <li class="fade-in"><span>Planner Estratégico Devolvi Meu Crachá</span><strong>R$ 297</strong></li>
-          <li class="fade-in"><span>Acesso ao grupo de WhatsApp</span><strong>R$ 197</strong></li>
-          <li class="fade-in"><span>Gravação por 7 dias</span><strong>R$ 147</strong></li>
-          <li class="fade-in"><span>Diagnóstico do Hobby Caro + Mapa de Upgrade</span><strong>R$ 297</strong></li>
+          <li class="fade-in"><span>Workshop ao vivo — 4h com Juliana Paes Garcia</span><strong>R$ 497</strong></li>
+          <li class="fade-in"><span>Planner Estratégico DMC</span><strong>R$ 297</strong></li>
+          <li class="fade-in"><span>IA de Diagnóstico de Nicho</span><strong>R$ 297</strong></li>
+          <li class="fade-in"><span>Guia dos 15 Nichos mais lucrativos em 2026</span><strong>R$ 97</strong></li>
+          <li class="fade-in"><span>Grupo de WhatsApp Pré-Evento</span><strong>R$ 97</strong></li>
         </ul>
 
         <div class="value-total fade-in">
           <span class="value-total__label">Valor total</span>
-          <span class="value-total__amount" data-countup="1435" data-prefix="R$ ">R$ 0</span>
+          <span class="value-total__amount" data-countup="1285" data-prefix="R$ ">R$ 0</span>
         </div>
 
         <div class="offer-card price-glow fade-in">
           <span class="offer-card__eyebrow">Oferta especial · Workshop 06 de junho</span>
-          <p class="offer-card__lede">Mas no Workshop de 06 de junho você tem acesso por apenas:</p>
+          <p class="offer-card__lede">de <strong>R$ 1.285</strong> por apenas:</p>
           <div class="price-block">
             <span class="price-block__currency">R$</span>
             <span class="price-block__amount" data-countup="49">0</span>
@@ -641,7 +659,16 @@
           </div>
           <p class="offer-card__sub">ou no Pix com confirmação imediata · ou cartão até 12x</p>
 
-          <!-- TODO: atualizar URL do checkout para o Caminho 3 -->
+          <ul class="offer-card__deliverables">
+            <li>Manhã de imersão com Juliana Paes Garcia — 4h ao vivo, sábado 06/jun, com a virada do hobby caro pro negócio estruturado no papel</li>
+            <li>Passo a passo prático para diagnosticar onde sua consultoria vaza, fazer upgrade de cliente, precificar por valor e captar sem indicação</li>
+            <li>Material de apoio — Planner Estratégico DMC preenchido durante o workshop</li>
+            <li>Ferramenta exclusiva — IA de Diagnóstico de Nicho com o Mapa de Upgrade do seu Cliente e o Inventário das suas Habilidades Transferíveis</li>
+            <li>Acesso ao método que já ajudou centenas de profissionais a transformar bagagem corporativa em negócio de alto ticket</li>
+            <li>Bônus: Guia com os 15 Nichos mais lucrativos em 2026</li>
+            <li>Grupo de WhatsApp Pré-Evento — conteúdo diário entre a sua compra e o dia 06/jun</li>
+          </ul>
+
           <a href="https://pay.hub.la/GP0buvn9GCgnQ2b2jWGB" target="_blank" rel="noopener noreferrer" class="cta-primary cta-primary--xl">
             QUERO SAIR DO HOBBY CARO
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle;flex-shrink:0"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
@@ -651,10 +678,6 @@
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle;flex-shrink:0"><path fill="none" stroke="currentColor" stroke-width="1.5" d="m5.67 9.914l3.062-4.143c1.979-2.678 2.969-4.017 3.892-3.734s.923 1.925.923 5.21v.31c0 1.185 0 1.777.379 2.148l.02.02c.387.363 1.003.363 2.236.363c2.22 0 3.329 0 3.704.673l.018.034c.354.683-.289 1.553-1.574 3.29l-3.062 4.144c-1.98 2.678-2.969 4.017-3.892 3.734s-.923-1.925-.923-5.21v-.31c0-1.185 0-1.777-.379-2.148l-.02-.02c-.387-.363-1.003-.363-2.236-.363c-2.22 0-3.329 0-3.703-.673l-.019-.034c-.354-.683.289-1.552 1.574-3.29Z"/></svg>
               Acesso imediato à área do aluno
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle;flex-shrink:0"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10.417c0-3.198 0-4.797.378-5.335c.377-.537 1.88-1.052 4.887-2.081l.573-.196C10.405 2.268 11.188 2 12 2s1.595.268 3.162.805l.573.196c3.007 1.029 4.51 1.544 4.887 2.081C21 5.62 21 7.22 21 10.417v1.574c0 5.638-4.239 8.375-6.899 9.536C13.38 21.842 13.02 22 12 22s-1.38-.158-2.101-.473C7.239 20.365 3 17.63 3 11.991z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9.5 12.4l1.429 1.6l3.571-4"/></g></svg>
-              Garantia de 7 dias incondicional
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle;flex-shrink:0"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 16c0-2.828 0-4.243.879-5.121C3.757 10 5.172 10 8 10h8c2.828 0 4.243 0 5.121.879C22 11.757 22 13.172 22 16s0 4.243-.879 5.121C20.243 22 18.828 22 16 22H8c-2.828 0-4.243 0-5.121-.879C2 20.243 2 18.828 2 16Z"/><path stroke-linecap="round" d="M12 14v4m-6-8V8a6 6 0 1 1 12 0v2"/></g></svg>
@@ -672,33 +695,6 @@
             <li>Ao meio-dia, você sai com o diagnóstico e a estratégia comercial no papel</li>
           </ol>
         </div>
-      </div>
-    </section>
-
-    <!-- =========================================================== -->
-    <!-- DOBRA 12 — GARANTIA                                          -->
-    <!-- =========================================================== -->
-    <section class="section section--guarantee" id="garantia">
-      <div class="container container--narrow text-center">
-        <div class="guarantee-seal fade-in">
-          <picture>
-            <source srcset="assets/img-garantia-selo.webp" type="image/webp">
-            <img src="assets/img-garantia-selo.png" alt="Selo de garantia incondicional de 7 dias" width="500" height="500" loading="eager">
-          </picture>
-        </div>
-
-        <header class="fade-in">
-          <span class="eyebrow">GARANTIA</span>
-          <h2 class="section-title">GARANTIA INCONDICIONAL DE 7 DIAS</h2>
-        </header>
-
-        <p class="section-body fade-in">
-          Você participa do Workshop, recebe o diagnóstico, leva o Planner. Se nos próximos 7 dias você sentir que <strong>isso não atacou o motivo real do seu negócio estar vivendo na montanha-russa</strong> — me escreve. Devolvo cada centavo, sem perguntas.
-        </p>
-
-        <p class="anchor-quote fade-in">
-          Você já cobrou abaixo do que vale demais vezes. <span>Aqui o risco é zero.</span>
-        </p>
       </div>
     </section>
 
@@ -757,7 +753,7 @@
               QUERO SAIR DO HOBBY CARO
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle;flex-shrink:0"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
             </a>
-            <p class="authority__cta-meta fade-in">R$ 49 à vista · Garantia 7 dias · Acesso imediato</p>
+            <p class="authority__cta-meta fade-in">R$ 49 à vista · Acesso imediato</p>
           </div>
         </div>
       </div>
@@ -839,9 +835,9 @@
           </details>
 
           <details class="faq-item fade-in">
-            <summary>E se eu não puder estar ao vivo?</summary>
+            <summary>E se eu tiver imprevisto no dia 06/jun?</summary>
             <div class="faq-item__body">
-              <p>Você tem acesso à gravação por 7 dias após o Workshop. Mas a recomendação é estar ao vivo — porque o diagnóstico do <strong>seu</strong> negócio acontece em tempo real.</p>
+              <p>A recomendação é estar ao vivo — porque os exercícios da sua reestruturação são construídos durante a manhã, em tempo real, com a Juliana orientando. Se tiver imprevisto pontual, você pode adquirir separadamente o acesso ao replay, que fica disponível por 30 dias após o evento. Mas o método é vivido na manhã do sábado.</p>
             </div>
           </details>
         </div>
